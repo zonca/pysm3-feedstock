@@ -1,5 +1,5 @@
 {% set name = "pysm3" %}
-{% set version = "3.4.4" %}
+{% set version = "3.4.5" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 44c4aac3d5e0e56edbe9c5b9ab0650ccb325d36c7651db144563d2459f65d456
+  sha256: 34649d98735ff92feb7a39a988ccb68629cd920a8358ecb0f35f60341370e322
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
