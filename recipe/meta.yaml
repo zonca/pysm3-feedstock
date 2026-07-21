@@ -1,5 +1,5 @@
 {% set name = "pysm3" %}
-{% set version = "3.4.5" %}
+{% set version = "3.4.6" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 34649d98735ff92feb7a39a988ccb68629cd920a8358ecb0f35f60341370e322
+  sha256: e491922ed3cc3de98f8ba273f6b1cfdfd5fadad8a359e8939a39cf0cd29c2397
 
 build:
   number: 0
@@ -22,20 +22,20 @@ requirements:
     - astropy-base
     - hatchling
     - hatch-vcs
-    - healpy >=1.16.0
+    - healpy >=1.18.1
     - h5py
     - numba
     - numpy >=1.21
-    - scipy >=1.10,<1.15
+    - scipy >=1.10
     - toml
   run:
     - python >={{ python_min }}
     - astropy-base
-    - healpy >=1.16.0
+    - healpy >=1.18.1
     - h5py
     - numba
     - numpy >=1.21
-    - scipy >=1.10,<1.15
+    - scipy >=1.10
     - toml
 
 test:
